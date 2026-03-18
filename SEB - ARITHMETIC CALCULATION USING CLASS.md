@@ -34,12 +34,31 @@ To write a Python program to perform addition and division operations using a cl
 
 ### PROGRAM
 
-```
-
-
 
 ```
+
+#Reg.no 212222060280
+#Name Trisha S
+
+from collections import defaultdict
+def create_file(file_path, content):
+    with open(file_path, 'w') as file:
+        file.write(content)
+def char_frequency(file_path):
+    char_count=defaultdict(int)
+    with open(file_path, 'r')as file:
+        content=file.read()
+        for char in content:
+           char_count[char]+=1
+    return char_count
+
+```
+
 
 ### OUTPUT
 
+<img width="815" height="258" alt="image" src="https://github.com/user-attachments/assets/6081dffa-e9fe-4bbf-accf-4450c7a1a832" />
+
+
 ### RESULT
+Thus a Python program that reads a file and counts the frequency of each character in it are verified.
